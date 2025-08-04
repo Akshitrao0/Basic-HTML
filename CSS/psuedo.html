@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+
+        p::before{
+            content: 'A';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: crimson;
+            border: none;
+            border-radius: 50px;
+        }
+
+        button:hover{
+            background-color: aqua;
+            color: blueviolet;
+        }
+        button:active{
+            background-color: rgb(89, 0, 255);
+        }
+        a:visited{
+            color: chartreuse;
+        }
+        input:focus{
+            background-color: cyan;
+            color: violet;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Inactive</p>
+    <button>
+        Click me
+    </button>
+    <a href='####'>Click Here</a>
+    <input type="text"></input>
+</body>
+</html>
